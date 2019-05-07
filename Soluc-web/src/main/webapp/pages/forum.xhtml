@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      >
+
+	<head >
+<title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Lite Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,   SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all" />
+    <!-- font-awesome icons -->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" />
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet" />
+    <!-- //online-fonts --></head><body>
+		      <!-- header -->
+    
+            <nav style="    background-color: #ff9551;" class="navbar navbar-expand-lg navbar-light bg-gradient-secondary pt-3">
+                <h1>
+                    <a class="navbar-brand text-white" href="index.html">
+                        <i class="fab fa-laravel"></i> SOLUC
+                    </a>
+                </h1>
+                <button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-lg-auto text-center">
+                        <li class="nav-item active  mr-3 mt-lg-0 mt-3">
+                            <a class="nav-link" href="index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item  mr-3 mt-lg-0 mt-3">
+                            <a class="nav-link scroll" href="#services">services</a>
+                        </li>
+                        <li class="nav-item dropdown mr-3 mt-lg-0 mt-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item scroll" href="#process">Process</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item scroll" href="#partners">Partners</a>
+                            </div>
+                        </li>
+                        <li class="nav-item mr-3 mt-lg-0 mt-3">
+                            <a class="nav-link scroll" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#register">register</a>
+                        </li>
+                        <li>
+                            <button type="button" class="btn  ml-lg-2 w3ls-btn" data-toggle="modal" aria-pressed="false" data-target="#exampleModal">
+                                Login
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav> 
+     <!-- banner -->
+   
+	<div class="row" >
+		<div class="col-md-6" style="margin-top: 150px">
+			<img style="max-width: 600px; margin-left: 20px" src="#{ShopBean.selectedShop.image}" />
+		</div>
+		<div class="col-md-6" style="margin-top: 150px">
+			<h:outputText class="h2 text-align" value="#{ShopBean.selectedShop.shopName}" />
+			
+			
+			<div class="form-control" style="margin-top: 30px">
+				<h:outputText class="h4" value="Opening Time " />
+				<h:outputText class="h5" value="#{ShopBean.selectedShop.openingTime}" />
+			</div>
+			
+			<div class="form-control">
+				<h:outputText class="h4" value="Closing Time " />
+				<h:outputText class="h5" value="#{ShopBean.selectedShop.closingTime}" />
+			</div>
+			
+			<div class="form-control">
+				<h:outputText class="h4" value="Details " />
+				<h:outputText class="h5" value="#{ShopBean.selectedShop.service}" />
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+	<div class="col-md-12" style="margin-top: 40px">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!#{ShopBean.selectedShop.gcoding}" width="100%" height="500" frameborder="0" style="border:0" ></iframe>
+	</div>
+	
+	</div>
+	
+    <!-- contact -->
+    <div class="contact-wthree" id="contact">
+        <div class="container py-sm-5">
+            <div class="row py-lg-5 py-4">
+                <div class="col-lg-4">
+                    <div class="title-wthree">
+                        <h3 class="agile-title">
+                            contact
+                        </h3>
+                        
+                        <!-- 
+                        	https://www.google.com/maps/embed?pb=!1m18!1m12!1m3! 1d85842.79354289011!2d10.274035793230418!3d36.910632350539665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34c98a20ee1578e8!2z2YXYqtis2LEg2KPZiNix2KfZhtisINin2YTYqNit2YrYsdipIDI!5e0!3m2!1sen!2stn!4v1557179191282!5m2!1sen!2stn
+                        	https://www.google.com/maps/embed?pb=!1m18!1m12!1m3! 1d25532.873530025423!2d10.245312486401271!3d36.87577224436924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb574a10bc86ea6f4!2sOoredoo%2Csoukra!5e0!3m2!1sen!2stn!4v1557179102659!5m2!1sen!2stn
+                        	
+                        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.106696162317!2d8.968044014715082!3d33.70618794333537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12566e5843c53f05%3A0x87be2f7800b82652!2sOoredoo!5e0!3m2!1sen!2stn!4v1557179435711!5m2!1sen!2stn" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        -->
+                        
+                        
+                        <span></span>
+                    </div>
+                    <p>Donec mi nulla, auctor nec sem a, ornare auctor mi. Sed mi tortor, commodo a felis in, fringilla tincidunt
+                        nulla. Vestibulum volutpat non eros ut vulpuuctor nec sem </p>
+                    <div class="d-sm-flex">
+                        <a class="btn btn-primary mt-lg-5 mt-3 agile-link-cnt scroll" href="#contact" role="button">email us</a>
+                        <a class="btn btn-primary mt-lg-5 mt-3 ml-4 agile-link-cnt bg-dark scroll" href="#footer">call us</a>
+                    </div>
+                </div>
+                <div class="offset-2"></div>
+                <div class="col-lg-6 mt-lg-0 mt-5">
+                    <!-- register form grid -->
+                    <div class="register-top1">
+                        <form action="#" method="get" class="register-wthree">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-2 d-md-flex align-items-end justify-content-end px-md-0">
+                                        <label class="mb-0">
+                                            <span class="fas fa-user"></span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <label>
+                                            First name
+                                        </label>
+                                        <input class="form-control" type="text" placeholder="Johnson" name="email" required="" />
+                                    </div>
+                                    <div class="col-md-5">
+                                        <label>
+                                            Last name
+                                        </label>
+                                        <input class="form-control" type="text" placeholder="Kc" name="email" required="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-2 d-md-flex align-items-end justify-content-end px-md-0">
+                                        <label class="mb-0">
+                                            <span class="fas fa-envelope-open"></span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <label>
+                                            Email
+                                        </label>
+                                        <input class="form-control" type="email" placeholder="example@email.com" name="email" required="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-2 d-md-flex align-items-end justify-content-end px-md-0">
+                                        <label class="mb-0">
+                                            <span class="far fa-edit"></span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <label>
+                                            Your message
+                                        </label>
+                                        <textarea placeholder="Type your message here" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-lg-5 mt-3">
+                                <div class="offset-2"></div>
+                                <div class="col-md-10">
+                                    <button type="submit" class="btn btn-agile btn-block w-100">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--  //register form grid ends here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- //contact -->
+    
+    <!-- //login -->
+    <!-- //footer -->
+    <!-- js -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!-- //js -->
+    <!-- script for password match -->
+    <script>
+        window.onload = function () {
+            document.getElementById("password1").onchange = validatePassword;
+            document.getElementById("password2").onchange = validatePassword;
+        }
+
+        function validatePassword() {
+            var pass2 = document.getElementById("password2").value;
+            var pass1 = document.getElementById("password1").value;
+            if (pass1 != pass2)
+                document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+            else
+                document.getElementById("password2").setCustomValidity('');
+            //empty string means no validation error
+        }
+    </script>
+    <!-- script for password match -->
+    <!-- start-smooth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+            };
+            */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script src="js/SmoothScroll.min.js"></script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+	
+	
+	<footer id="footer" class="text-sm-left text-center">
+        <div class="container py-4 py-sm-5">
+            <h2>
+                <a class="navbar-brand text-white" href="index.html">
+                    <i class="fab fa-laravel"></i> lite
+                </a>
+            </h2>
+            <div class="row py-sm-5 py-3">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <ul class="list-agileits">
+                        <li>
+                            <a href="index.html" class="nav-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#register" class="nav-link scroll">
+                               Register
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#process" class="nav-link scroll">
+                                Process
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#partners" class="nav-link scroll ">
+                               Partners
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav-link scroll">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mt-sm-5">
+                    <ul class="list-agileits">
+                        <li>
+                            <a href="#register" class="nav-link scroll">
+                                Register
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="nav-link">
+                                Terms
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="nav-link">
+                                License
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="offset-lg-5"></div>
+                <div class="col-lg-3 col-md-4 footer-end-grid mt-md-0 mt-sm-5">
+                    <div class="fv3-contact">
+                        <span class="fas fa-phone mr-2"></span>
+                        <p class="d-inline">
+                            111 22 3333
+                        </p>
+                    </div>
+                    <div class="fv3-contact">
+                        <span class="fas fa-mobile mr-2"></span>
+                        <p class="d-inline">
+                            111 22 3333
+                        </p>
+                    </div>
+                    <div class="fv3-contact">
+                        <span class="fas fa-envelope-open mr-2"></span>
+                        <p class="d-inline">
+                            <a href="mailto:example@email.com">info@example.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between pt-lg-5   footer-bottom-cpy">
+                <div class="cpy-right text-center">
+                    <p>© 2018 Lite. All rights reserved | Design by
+                        <a href="http://w3layouts.com" class="text-white"> W3layouts.</a>
+                    </p>
+                </div>
+                <div class="social-icons pb-md-0 pb-4">
+                    <ul class="social-iconsv2 agileinfo text-center">
+                        <li class="ml-lg-5">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- login  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h:form >
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Username</label>
+                            <h:inputText value="#{loginBean.username}" class="form-control" placeholder=" " name="Name" id="recipient-name" required="" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-form-label">Password</label>
+                            <h:inputSecret type="password" value="#{loginBean.password}" class="form-control" placeholder=" " name="Password" id="password" required="" />
+                        </div>
+                        <div class="right-w3l">
+                            <h:commandButton action="#{loginBean.doLogin()}" class="form-control" value="Login" />
+                        </div>
+                        <div class="row sub-w3l my-3">
+                            <div class="col sub-agile">
+                                <input type="checkbox" id="brand1" value="" />
+                                <label for="brand1" class="text-secondary">
+                                    <span></span>Remember me?</label>
+                            </div>
+                            <div class="col forgot-w3l text-right">
+                                <a href="#" class="text-secondary">Forgot Password?</a>
+                            </div>
+                        </div>
+                        <p class="text-center dont-do">Don't have an account?
+                            <a href="#register" class="scroll text-dark font-weight-bold">
+                                Register Now</a>
+                        </p>
+                    </h:form>
+                </div>
+            </div>
+        </div>
+    </div></body>
+    </html>

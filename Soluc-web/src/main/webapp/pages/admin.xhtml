@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:p="http://primefaces.org/ui">
+
+		<h:head >
+<title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Lite Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,   SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all" />
+    <!-- font-awesome icons -->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" />
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet" />
+    <!-- //online-fonts --></h:head>
+    <body>
+		      <!-- header -->
+    
+            
+            
+            
+            <div class="content" style="margin-top: 150px">
+            	<div class="container">
+            		<div class="row">
+            			<div class="col-md-3"></div>
+            			<div class="col-md-6">
+            				
+            				<p class="h2 align-center"> Add New Shop </p>
+            				
+            				<h:form enctype="multipart/form-data">
+            				
+            				 	<div class="form-group">
+	            					<h:outputText value="Would you please pick an image"></h:outputText>
+	            					<h:inputFile value="#{ShopBean.file}"></h:inputFile>
+            					</div>	
+            					
+            					<div class="form-group">
+	            					<h:outputText value="Name"></h:outputText>
+	            					<h:inputText class="form-control" value="#{ShopBean.shopName}"/>
+            					</div>
+            					
+            					<div class="form-group">
+	            					<h:outputText value="Adress"></h:outputText>
+	            					<h:inputText class="form-control" value="#{ShopBean.location}" />
+            					</div>
+            					
+            					<div class="form-group">
+	            					<h:outputText value="Opening Time"></h:outputText>
+							      	<p:datePicker showTime="true" value="#{ShopBean.openingTime}" showIcon="true" />								
+            					</div>
+            					
+            					<div class="form-group">
+	            					<h:outputText value="Closing Time "></h:outputText>
+	            					<p:datePicker showTime="true" value="#{ShopBean.closingTime}" showIcon="true" />
+            					</div>
+            					
+            					
+            					<div class="form-group">
+	            					<h:outputText value="Servies "></h:outputText>
+	            					<h:inputTextarea class="form-control" value="#{ShopBean.service}" />
+            					</div>
+            					
+            					
+            					<h:commandButton style="display: block; margin: auto" class="btn btn-success" action="#{ShopBean.addShop()}" value="Add" />
+            					
+            				</h:form>
+            				
+            			</div>
+            			<div class="col-md-3"></div>
+            		</div>
+           		</div>
+            </div>
+            
+            <footer id="footer" class="text-sm-left text-center">
+        <div class="container py-4 py-sm-5">
+            <h2>
+                <a class="navbar-brand text-white" href="index.html">
+                    <i class="fab fa-laravel"></i> lite
+                </a>
+            </h2>
+            <div class="row py-sm-5 py-3">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <ul class="list-agileits">
+                        <li>
+                            <a href="index.html" class="nav-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#register" class="nav-link scroll">
+                               Register
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#process" class="nav-link scroll">
+                                Process
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#partners" class="nav-link scroll ">
+                               Partners
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav-link scroll">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mt-sm-5">
+                    <ul class="list-agileits">
+                        <li>
+                            <a href="#register" class="nav-link scroll">
+                                Register
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="nav-link">
+                                Terms
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="nav-link">
+                                License
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="offset-lg-5"></div>
+                <div class="col-lg-3 col-md-4 footer-end-grid mt-md-0 mt-sm-5">
+                    <div class="fv3-contact">
+                        <span class="fas fa-phone mr-2"></span>
+                        <p class="d-inline">
+                            111 22 3333
+                        </p>
+                    </div>
+                    <div class="fv3-contact">
+                        <span class="fas fa-mobile mr-2"></span>
+                        <p class="d-inline">
+                            111 22 3333
+                        </p>
+                    </div>
+                    <div class="fv3-contact">
+                        <span class="fas fa-envelope-open mr-2"></span>
+                        <p class="d-inline">
+                            <a href="mailto:example@email.com">info@example.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between pt-lg-5   footer-bottom-cpy">
+                <div class="cpy-right text-center">
+                    <p>© 2018 Lite. All rights reserved | Design by
+                        <a href="http://w3layouts.com" class="text-white"> W3layouts.</a>
+                    </p>
+                </div>
+                <div class="social-icons pb-md-0 pb-4">
+                    <ul class="social-iconsv2 agileinfo text-center">
+                        <li class="ml-lg-5">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>

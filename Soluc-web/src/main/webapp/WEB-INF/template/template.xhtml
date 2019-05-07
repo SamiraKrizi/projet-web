@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 	  
+
+	<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				      xmlns:ui="http://java.sun.com/jsf/facelets"
+				      xmlns:f="http://java.sun.com/jsf/core"
+				      xmlns:h="http://java.sun.com/jsf/html">
+				      
+     <h:head>
+     
+     <ui:insert name="title"></ui:insert>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Lite Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="/WEB-INF/include/css/bootstrap.css" type="text/css" rel="stylesheet" media="all"/>
+    <link href="/WEB-INF/include/css/style.css" type="text/css" rel="stylesheet" media="all"/>
+    <!-- font-awesome icons -->
+    <link href="/WEB-INF/include/css/fontawesome-all.min.css" rel="stylesheet"/>
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet"/>
+    <!-- //online-fonts -->
+     
+     </h:head>
+     	
+     
+     <h:body>
+     <ui:include src="/WEB-INF/include/header.xhtml"> </ui:include>
+     <ui:insert name="content"></ui:insert>
+     <ui:include src="/WEB-INF/include/footer.xhtml" ></ui:include>
+
+      
+     
+     </h:body>
+     
+	</ui:composition>
